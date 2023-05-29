@@ -1,0 +1,17 @@
+@startuml
+class control.conexion.Conexion
+class control.dao.ServidorDAO
+class java.sql.Connection
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class modelo.ClienteVO
+class vista.VentanaCliente
+control.dao.ServidorDAO ..> control.conexion.Conexion
+control.dao.ServidorDAO ..> java.sql.Connection
+control.dao.ServidorDAO ..> java.sql.ResultSet
+control.dao.ServidorDAO ..> java.sql.SQLException
+control.dao.ServidorDAO ..> java.sql.Statement
+control.dao.ServidorDAO ..> modelo.ClienteVO
+control.dao.ServidorDAO ..> vista.VentanaCliente
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+annotation java.lang.Override
+class control.Controlador
+class control.Launcher
+class java.awt.event.ActionEvent
+class java.lang.Thread
+class modelo.Tiempo
+class vista.Ventana
+class vista.PanelBotones
+class vista.PanelContador
+class vista.PanelDatos
+interface java.awt.event.ActionListener
+control.Controlador ..> java.lang.Override
+control.Controlador ..> java.awt.event.ActionEvent
+control.Controlador --|> java.lang.Thread
+control.Controlador ..> modelo.Tiempo
+control.Controlador ..> vista.Ventana
+control.Controlador --|> java.awt.event.ActionListener
+control.Launcher ..> vista.Ventana
+@enduml

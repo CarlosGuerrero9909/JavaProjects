@@ -1,0 +1,30 @@
+@startuml
+annotation java.lang.Override
+class control.Cliente.Cliente
+class control.Cliente.ControladorCliente
+class control.Cliente.LauncherCliente
+class java.awt.event.ActionEvent
+class java.io.EOFException
+class java.io.IOException
+class java.io.ObjectInputStream
+class java.io.ObjectOutputStream
+class java.lang.Thread
+class java.net.Socket
+class modelo.ClienteVO
+class vista.VentanaCliente
+interface java.awt.event.ActionListener
+control.Cliente.Cliente ..> java.io.IOException
+control.Cliente.Cliente ..> java.net.Socket
+control.Cliente.Cliente ..> vista.VentanaCliente
+control.Cliente.ControladorCliente ..> java.lang.Override
+control.Cliente.ControladorCliente ..> java.awt.event.ActionEvent
+control.Cliente.ControladorCliente ..> java.io.EOFException
+control.Cliente.ControladorCliente ..> java.io.IOException
+control.Cliente.ControladorCliente ..> java.io.ObjectInputStream
+control.Cliente.ControladorCliente ..> java.io.ObjectOutputStream
+control.Cliente.ControladorCliente --|> java.lang.Thread
+control.Cliente.ControladorCliente ..> java.net.Socket
+control.Cliente.ControladorCliente ..> modelo.ClienteVO
+control.Cliente.ControladorCliente ..> vista.VentanaCliente
+control.Cliente.ControladorCliente --|> java.awt.event.ActionListener
+@enduml

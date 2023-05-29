@@ -1,0 +1,30 @@
+@startuml
+annotation java.lang.Override
+class controladorServidor.ControladorServidor
+class controladorServidor.LauncherServidor
+class controladorServidor.Servidor
+class java.io.DataInputStream
+class java.io.DataOutputStream
+class java.io.IOException
+class java.io.ObjectOutputStream
+class java.lang.Thread
+class java.net.ServerSocket
+class java.net.Socket
+class java.util.Vector
+class javax.swing.DefaultListModel
+class vistaServidor.VentanaServidor
+controladorServidor.ControladorServidor ..> java.lang.Override
+controladorServidor.ControladorServidor ..> java.io.DataInputStream
+controladorServidor.ControladorServidor ..> java.io.DataOutputStream
+controladorServidor.ControladorServidor ..> java.io.ObjectOutputStream
+controladorServidor.ControladorServidor --|> java.lang.Thread
+controladorServidor.ControladorServidor ..> java.net.Socket
+controladorServidor.ControladorServidor ..> java.util.Vector
+controladorServidor.ControladorServidor ..> javax.swing.DefaultListModel
+controladorServidor.ControladorServidor ..> vistaServidor.VentanaServidor
+controladorServidor.LauncherServidor ..> java.io.IOException
+controladorServidor.Servidor ..> java.io.DataInputStream
+controladorServidor.Servidor ..> java.net.ServerSocket
+controladorServidor.Servidor ..> java.net.Socket
+controladorServidor.Servidor ..> vistaServidor.VentanaServidor
+@enduml

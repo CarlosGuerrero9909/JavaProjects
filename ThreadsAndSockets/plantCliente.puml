@@ -1,0 +1,40 @@
+@startuml
+annotation java.lang.Override
+class controladorCliente.Cliente
+class controladorCliente.ControladorCliente
+class controladorCliente.LauncherCliente
+class java.awt.event.ActionEvent
+class java.io.DataInputStream
+class java.io.DataOutputStream
+class java.io.File
+class java.io.FileInputStream
+class java.io.FileNotFoundException
+class java.io.IOException
+class java.io.ObjectInputStream
+class java.lang.Thread
+class java.net.Socket
+class javax.swing.DefaultListModel
+class javax.swing.JLabel
+class javax.swing.JOptionPane
+class vistaCliente.VentanaCliente
+interface java.awt.event.ActionListener
+controladorCliente.Cliente ..> java.io.DataOutputStream
+controladorCliente.Cliente ..> java.net.Socket
+controladorCliente.Cliente ..> vistaCliente.VentanaCliente
+controladorCliente.ControladorCliente ..> java.lang.Override
+controladorCliente.ControladorCliente ..> java.awt.event.ActionEvent
+controladorCliente.ControladorCliente ..> java.io.DataInputStream
+controladorCliente.ControladorCliente ..> java.io.DataOutputStream
+controladorCliente.ControladorCliente ..> java.io.File
+controladorCliente.ControladorCliente ..> java.io.FileInputStream
+controladorCliente.ControladorCliente ..> java.io.FileNotFoundException
+controladorCliente.ControladorCliente ..> java.io.IOException
+controladorCliente.ControladorCliente ..> java.io.ObjectInputStream
+controladorCliente.ControladorCliente --|> java.lang.Thread
+controladorCliente.ControladorCliente ..> java.net.Socket
+controladorCliente.ControladorCliente ..> javax.swing.DefaultListModel
+controladorCliente.ControladorCliente ..> javax.swing.JLabel
+controladorCliente.ControladorCliente ..> javax.swing.JOptionPane
+controladorCliente.ControladorCliente ..> vistaCliente.VentanaCliente
+controladorCliente.ControladorCliente --|> java.awt.event.ActionListener
+@enduml

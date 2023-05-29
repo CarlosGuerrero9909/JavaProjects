@@ -1,0 +1,5 @@
+CLIENTTES IDIOMAS
+
+URLBD = "jdbc:derby://localhost:1527/CLIENTESIDIOMAS"
+usuario=clientesidiomas
+contraseña=clientesidiomas
